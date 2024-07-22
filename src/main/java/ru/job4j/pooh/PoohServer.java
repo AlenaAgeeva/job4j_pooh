@@ -1,9 +1,11 @@
 package ru.job4j.pooh;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -63,7 +65,7 @@ public class PoohServer {
         }
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         var pooh = new PoohServer();
         pooh.runSchemas();
         pooh.runServer();

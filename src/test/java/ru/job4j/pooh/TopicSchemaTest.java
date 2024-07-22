@@ -77,5 +77,4 @@ class TopicSchemaTest {
         assertThat(outFirst).containsOnly("23", "20");
         assertThat(outSecond).containsOnly("23", "20");
     }
-
 }
